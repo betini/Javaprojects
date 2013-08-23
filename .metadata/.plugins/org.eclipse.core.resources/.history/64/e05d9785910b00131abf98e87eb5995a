@@ -1,0 +1,145 @@
+<LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIGITE UN NUMERO" />
+
+    <EditText
+        android:id="@+id/dato1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+
+    <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+  
+        <Button
+        android:id="@+id/siete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="siete"
+        android:text="7" />
+    
+    <Button
+        android:id="@+id/ocho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ocho"
+        android:text="8" />
+    
+    <Button
+        android:id="@+id/nueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nueve"
+        android:text="9" />
+
+    <Button
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplica"
+        android:text="x" />
+    </LinearLayout>
+
+        <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    
+    <Button
+        android:id="@+id/cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cuatro"
+        android:text="4" />
+    
+    <Button
+        android:id="@+id/cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cinco"
+        android:text="5" />
+    
+    <Button
+        android:id="@+id/seis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="seis"
+        android:text="6" />
+
+    <Button
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="divide"
+        android:text="/" />
+    </LinearLayout>
+    
+     <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    
+    <Button
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uno"
+        android:text="1" />
+    
+    <Button
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dos"
+        android:text="2" />
+    
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tres"
+        android:text="3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="suma"
+        android:text="+" />
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <Button
+         android:id="@+id/cero"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:onClick="cero"
+        android:text="0" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="igual"
+        android:text="=" />
+      
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resta"
+        android:text="-" />
+    
+    </LinearLayout>
+    </LinearLayout>

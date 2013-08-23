@@ -1,0 +1,128 @@
+package com.example.calculadora;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+
+	TextView tv1;
+	EditText et1;
+	EditText et2;
+	TextView tv2;
+	Button b1;
+	
+	double n1;
+	double n2;
+	
+	
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	public void uno (View v)
+	{
+		et1.setText(1);
+	}
+	
+	public void dos (View v)
+	{
+		et1.setText(2);
+	}
+	
+	public void tres (View v)
+	{
+		et1.setText(3);
+	}
+	
+	public void cuatro (View v)
+	{
+		et1.setText(4);
+	}
+	
+	public void cinco (View v)
+	{
+		et1.setText(5);
+	}
+	
+	public void seis (View v)
+	{
+		et1.setText(6);
+	}
+	
+	public void siete (View v)
+	{
+		et1.setText(7);
+	}
+	
+	public void ocho (View v)
+	{
+		et1.setText(8);
+	}
+	
+	public void nueve (View v)
+	{
+		tv1.setText(9);
+	}
+	
+	public void cero (View v)
+	{
+		tv1.setText(0);
+	}
+
+	public void suma (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se sumo correctamente");
+		tv2.setText(Double.toString((this.n1 + this.n2)));
+	}
+	
+	public void resta (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se restar correctamente");
+		tv2.setText(Double.toString((this.n1 - this.n2)));
+	}
+	
+	public void multiplica (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se multiplica correctamente");
+		tv2.setText(Double.toString((this.n1 * this.n2)));
+	}
+	
+	public void divide (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se divide correctamente");
+		tv2.setText(Double.toString((this.n1 / this.n2)));
+	}
+	
+	public void igual (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se divide correctamente");
+		tv2.setText(Double.toString((this.n1 / this.n2)));
+	}
+
+}

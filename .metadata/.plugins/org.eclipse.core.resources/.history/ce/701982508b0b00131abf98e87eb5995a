@@ -1,0 +1,82 @@
+package com.example.calculadora;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+
+	TextView tv1;
+	EditText et1;
+	EditText et2;
+	TextView tv2;
+	
+	double n1;
+	double n2;
+	
+	
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		tv1 = (TextView) this.findViewById(R.id.aviso);
+		tv2 = (TextView) this.findViewById(R.id.resultado);
+		et1 = (EditText) this.findViewById(R.id.dato1);
+
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	public void suma (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se sumo correctamente");
+		tv2.setText(Double.toString((this.n1 + this.n2)));
+	}
+	
+	public void resta (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se restar correctamente");
+		tv2.setText(Double.toString((this.n1 - this.n2)));
+	}
+	
+	public void multiplica (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se multiplica correctamente");
+		tv2.setText(Double.toString((this.n1 * this.n2)));
+	}
+	
+	public void divide (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se divide correctamente");
+		tv2.setText(Double.toString((this.n1 / this.n2)));
+	}
+	
+	public void enter (View v)
+	{
+		this.n1 = Double.parseDouble(this.et1.getText().toString());
+		this.n2 = Double.parseDouble(this.et2.getText().toString());   
+		tv1.setText("se divide correctamente");
+		tv2.setText(Double.toString((this.n1 / this.n2)));
+	}
+
+}

@@ -1,0 +1,130 @@
+<LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIGITE LOS DOS NUMEROS" />
+
+    <EditText
+        android:id="@+id/dato1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    </EditText>
+
+
+    <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uno"
+        android:text="7" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplica"
+        android:text="8" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="divide"
+        android:text="9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="suma"
+        android:text="x" />
+    </LinearLayout>
+
+        <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uno"
+        android:text="4" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplica"
+        android:text="5" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="divide"
+        android:text="6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="suma"
+        android:text="/" />
+    </LinearLayout>
+    
+     <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uno"
+        android:text="1" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplica"
+        android:text="2" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="divide"
+        android:text="3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="suma"
+        android:text="+" />
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:onClick="uno"
+        android:text="0" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="multiplica"
+        android:text="Enter" />
+      
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="divide"
+        android:text="-" />
+    </LinearLayout>
