@@ -1,0 +1,42 @@
+package com.example.sumas;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	TextView tv;
+	EditText t1, t2;
+	int r1, r2, r3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        tv= (TextView) this.findViewById(R.id.aviso);
+        tv.setText("cambio de texto");
+        
+        
+        t1= (EditText) this.findViewById(R.id.campo1);
+        t2= (EditText) this.findViewById(R.id.campo2);
+        r1 =Integer.parseInt(t1.getEditableText().toString());
+        r2 =Integer.parseInt(t1.getEditableText().toString());
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+    
+    public void metodo(View v){
+    	r3=r1+r2;
+    	tv.setText("la suma es "+r3);
+    }
+    
+}
